@@ -1,0 +1,26 @@
+.contact-form{
+    width: 25%;
+    margin: auto;
+}
+    
+/* .b{
+    background-image: url('../data/food2.jpg');
+
+} */
+
+
+.form-lable{
+    margin-top: 20px;
+    
+}
+
+button{
+    color: white;
+    background-color: #130FBC;
+    margin-top: 10px;
+    border-color: yellow;
+    border-radius: 5px;
+}
+.form-control{
+    opacity: 80%;
+}

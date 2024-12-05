@@ -1,0 +1,19 @@
+div .bg-image1 {
+    background-image: url('../data/foodf.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    color: rgb(16, 12, 12);
+}
+
+.bg-image1 .text-header {
+    float: left;
+    margin-left: 10%;
+    margin-top: 7%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    font-size: larger;
+}

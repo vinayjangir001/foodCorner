@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="food-delivery/src/main"/>
+	<classpathentry excluding="food-delivery/src/main/|food-delivery/src/main/|food-delivery/src/|food-delivery/src/" kind="src" path=""/>
+	<classpathentry excluding="main/" kind="src" path="food-delivery/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

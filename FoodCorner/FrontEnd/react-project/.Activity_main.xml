@@ -1,0 +1,31 @@
+.Activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+tools:context=".MainActivity" android:orientation="vertical">
+<Button
+android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="On" />
+
+<Button
+android:id="@+id/btnOff"
+android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Off" />
+</LinearLayout>
+MainActivity.java
+package com.example.wifiq4;
+import androidx.appcompat.app.AppCompatActivity; import android.content.Context;
+import android.net.wifi.WifiManager;import android.os.Bundle;
+import android.view.View; import android.widget.Button;import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {Button enableButton,disableButton;
+protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); enableButton=(Button)findViewById(R.id.button); disableButton=(Button)findViewById(R.id.btnOff); enableButton.setOnClickListener(new View.OnClickListener() {@Override
+public void onClick(View view) { WifiManager wifi
+= (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+wifi.setWifiEnabled(true); Toast.makeText(getApplicationContext(), "Wifi Turned On",
+Toast.LENGTH_LONG).show();
+}
+});
+
+disableButton.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View view) { WifiManager wifi
+ 
+= (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE); wifi.setWifiEnabled(false);
+Toast.makeText(getApplicationContext(), "Wifi Turned Off", Toast.LENGTH_LONG).show();
+}
+} }
